@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure-Factory-Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+    rel='stylesheet'/>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Figure Factory</a>
+            <a href="about.html" class="about-us">About Us</a>
+            <a href="contact.html" class="contact-us">Contact Us</a>
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <div class="cart">
+               <h2 class="cart-title">Your Cart</h2>
+               <div class="cart-content"> </div>
+               <div class="total">
+                  <div class="total-title">Total</div>
+                  <div class="total-price">₱0</div>
+                </div>
+                <button type="button" class="btn-buy" onclick="location.href='checkout.html'">Pay Now</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <div class="nav container filter-container">
+            <input type="text" id="search" placeholder="Search products...">
+            <button class="filter-btn" onclick="filterProducts('all')">All</button>
+            <button class="filter-btn" onclick="filterProducts('action')">Top Sales</button>
+        </div>
+        <div class="shop-content">
+            <div class="shop-content">
+                <!-- product 1-->
+            <div class="product-box" data-productId="1" data-topSeller="true" data-category="action" data-description="Description for Attack on Titan Eren">
+                <img src="product1.jpg" class="product-img" />
+                <h2 class="product-title">Attack on Titan Eren</h2>
+                <span class="price">₱2499</span>
+                <div class="product-description hidden">
+                    <h4>Product Description:</h4>
+                    <p>Eren Yeager, the main protagonist of Attack On Titan, presents himself as a passionate, impulsive, and daring young man filled with rage</p>
+                    <p>against Titans, human devouring beings.</p>
+
+                        <h3>Product Features:</h3>
+                        <div class="product-details">
+                            <p>Name:  Attack on Titan: The Final Season Eren Yeager Non-Scale Figure
+
+                            Material: Made of ABS and PVC
+                            
+                            Height: 17cm 
+                            
+                            Package: Color box
+                            </p>
+                        </div>
+                    </div>                            
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- product 2-->
+                <div class="product-box" data-productId="2" data-topSeller="true" data-category="action" data-description="Description for Product 2">
+                    <img src="product2.jpg" class="product-img" />
+                    <h2 class="product-title">Nier Automata 2b</h2>
+                    <span class="price">₱2099</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>2B is a blade of quiet determination. As a combat android, she does not encourage idle chatter on frivolous subjects and is generally reticent
+                        </p> others. She also has high respect for the chain of command and rarely questions her orders, unlike her partner.</p>
+                        
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Series: NieR: Automata
+
+                            Product Name: 2B (YoRHa No. 2 Type B)
+
+                            Specifications: Painted, non-articulated, non-scale figure with base
+
+                            Height: 18 cm
+                            
+                            Package: Color box
+                            </p>
+                        </div>
+                    </div>            
+                  <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- product 3-->
+                <div class="product-box" data-productId="3" data-description="Description for Product 3">
+                    <img src="product3.jpg" class="product-img" />
+                    <h2 class="product-title">Tokyo Ghoul Ken Kaneki</h2>
+                    <span class="price">₱999</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>Kaneki starts off as a normal ordinary teenage boy with a minorly troubled past but he manages to cope with it. As a person, he's very caring</p>
+                        <p>and compassionate, sometimes timid and a tab bit naive some would say. But one of his more compelling characteristics is his bravery.</p>
+                        
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Series: Tokyo Ghoul
+
+                            Product Name: Tokyo Ghoul Ken Kaneki: Awakened Repaint Ver. (Re-run)
+
+                            Sculptor: Shin Tanabe
+
+                            Specifications: Painted, non-articulated, 1/8 scale PVC (phthalate free) & ABS figure with base
+
+                            Height: 225 mm | 8.9"
+                            
+                            Package: Color box
+                            </p>
+                        </div>
+                    </div>            
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- product 4-->
+                <div class="product-box" data-productId="4" data-description="Description for Product 4">
+                    <img src="product4.jpg" class="product-img" />
+                    <h2 class="product-title">One Punch Man Saitama</h2>
+                    <span class="price">₱1999</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>Saitama is a self-proclaimed superhero who can defeat every opponent that he encounters with a single punch.</p>
+                        
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Product Name: One-Punch Man Saitama
+
+                            Manufacturer: ThreeZero
+
+                            Specifications: Articulated 1/6 scale figure
+
+                            Height: 30 cm
+                            
+                            Also includes: 2 interchangeable heads (serious, comical)
+                            Tailored hero suit with cape
+                            Exchangeable gloved hands (relaxed, fists, gripping)
+                            </p>
+                        </div>
+                    </div>            
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                   <!-- product 5-->
+                <div class="product-box" data-productId="5" data-topSeller="true" data-category="action" data-description="Description for One Piece Luffy">
+                    <img src="product5.jpg" class="product-img" />
+                    <h2 class="product-title">Wano One Piece Luffy</h2>
+                    <span class="price">Out of Stock</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>Monkey D. Luffy defends his treasure in this highly detailed figure from Unique Art Studio.</p>
+                        
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Series: One Piece
+
+                            Product Name: One Piece Log Collection Big Statue Series Monkey D. Luffy
+
+                            Manufacturer: Unique Art Studio
+
+                            Specifications: Painted, non-articulated Polystone & PVC figure with stand
+                            
+                            Height: 40 cm 
+                            </p>
+                        </div>
+                    </div>            
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- product 6-->
+                <div class="product-box" data-productId="6" data-description="Description for Bleach Ichigo">
+                    <img src="product6.jpg" class="product-img" />
+                    <h2 class="product-title">Ichigo From Bleach</h2>
+                    <span class="price">₱3599</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>From the popular anime Bleach comes a Nendoroid of the main character, Ichigo Kurosaki! A cloth-wrapped version of Zangetsu for carrying</p>
+                        <p>on his back is also included, along with the Modified Soul, Kon, in his stuffed lion form!</p>
+
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Series: Bleach
+
+                            Product Name: Nendoroid Bleach Ichigo Kurosaki
+
+                            Manufacturer: Good Smile Company
+
+                            Specifications: Painted, articulated, non-scale ABS & PVC figure with optional parts and stand
+                            
+                            Height : 43 cm
+                            </p>
+                        </div>
+                    </div>            
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- product 7-->
+                <div class="product-box" data-productId="7" data-description="Description for Hunter X Hunter Gon">
+                    <img src="product7.png" class="product-img" />
+                    <h2 class="product-title">Hunter X Hunter Gon</h2>
+                    <span class="price">₱749</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>Gon is an athletic, rustic, and friendly boy who is searching for adventure. Also, he is not very good at math. However, having spent a lot of time</p>
+                        <p>in the woods as a child, he is very good with animals.</p>
+
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Series: Hunter x Hunter
+
+                            Manufacturer: Max Factory
+
+                            Specifications: Painted ABS & PVC
+
+                            Size: 27 cm
+                            
+                            Distributed by: Good Smile Company
+                            </p>
+                        </div>
+                    </div>            
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- product 8-->
+                <div class="product-box" data-productId="8" data-description="Description for Chainsaw Man Makima">
+                    <img src="product8.jpg" class="product-img" />
+                    <h2 class="product-title">Chainsaw Man Makima</h2>
+                    <span class="price">₱899</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>From the anime series "Chainsaw Man" comes a 1/7 scale figure of the devil hunter that reports directly to the Chief Cabinet Secretary,</p>
+                        <p>Makima! Makima has been captured in figure form sitting atop the ruins of a brick wall with a gentle smile on her face.</p>
+
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Series: Chainsaw Man
+
+                            Product Name: Chainsaw Man Makima 1/7 Scale Figure
+
+                            Sculptor: Koudai Abe (Fenrir)
+
+                            Specifications: Painted 1/7 scale plastic figure with stand
+                            
+                            Height: 13 cm
+                            </p>
+                        </div>
+                    </div>           
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- product 9-->
+                <div class="product-box" data-productId="9" data-description="Description for Dabi">
+                    <img src="product9.jpg" class="product-img" />
+                    <h2 class="product-title">Dabi from Hero Academia</h2>
+                    <span class="price">₱2299</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>Dabi is a rude and argumentative person who has no sense of respect. He introduced himself to Tomura informally, and refused to give out</p>
+                        <p>his real name. Nevertheless, he is a calm-minded person, who is always focused and determined to complete his given tasks.</p>
+                        
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Series: My Hero Academia
+
+                            Product Name: Revoltech Amazing Yamaguchi My Hero Academia Dabi
+
+                            Materials: PVC, ABS, POM
+
+                            Specifications: Painted, articulated, non-scale figure
+                            
+                            Height: 30 cm
+                            </p>
+                        </div>
+                    </div>            
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- product 10-->
+                <div class="product-box" data-productId="10" data-topSeller="true" data-category="action" data-description="Description for Spiderman Miles Morales" title="Sold Out">
+                    <img src="product10.jpg" class="product-img" />
+                    <h2 class="product-title">Spiderman Miles Morales</h2>
+                    <span class="price">Out of Stock</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>Miles Morales swings web-first back into Kotobukiya’s ArtFX+ figure series with this must-have re-release! Based on concept art by Stefano</p>
+                        <p>Caselli and sculpted in 1/10 scale by Junnosuke Abe, Spidey is crouched low at 4.1” tall looking impressive in his sleek black and red costume</p>
+                        <p>as he extends an arm out to use his web-shooter.</p>
+                        
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Series: Spider-Man
+
+                            Product Name: ArtFX+ Marvel Spider-Man Miles Morales (Re-run)
+
+                            Manufacturer: Kotobukiya
+
+                            Specifications: Painted, non-articulated, 1/10 scale easy-to-assemble figure kit
+
+                            Height : 22 cm
+                        
+                            </p>
+                        </div>
+                    </div>             
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- product 11-->
+                <div class="product-box" data-productId="11" data-description="Marvel Thor">
+                    <img src="product11.jpg" class="product-img" />
+                    <h2 class="product-title">Thor from Marvel</h2>
+                    <span class="price">₱1499</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>Whoever wields this hammer, should he be worthy, shall receive the power of Thor. The first character to kick off the newest chapter in</p>
+                        <p>Kotobukiya’s Marvel ArtFX figure series in none other than the God of Thunder himself, Thor!</p>
+                        
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Series: Marvel Universe
+
+                            Product Name: ArtFX Marvel Universe Thor: The Bronze Age
+
+                            Specifications: Painted, non-articulated, 1/6 scale figure with stand
+
+                            Height: 13.8 cm
+                            
+                            Materials PVC (phthalate‐free), ABS, iron
+                            </p>
+                        </div>
+                    </div>             
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- product 12-->
+                <div class="product-box" data-productId="12" data-description="Power Ranger Red">
+                    <img src="product12.jpg" class="product-img" />
+                    <h2 class="product-title">Power Ranger Red</h2>
+                    <span class="price">₱1299</span>
+                    <div class="product-description hidden">
+                        <h4>Product Description:</h4>
+                        <p>Whether it’s Jason Scott Lee or Rocky DeSantos, the Mighty Morphin Red Ranger has the martial arts chopsto cut Rita Repulsa and her evil 
+                            minions down to size!</p>
+                        
+                        <h3>Product Details:</h3>
+                        <div class="product-details">
+                            <p>Series: Power Ranger
+
+                            Name: Power Ranger Red
+
+                            Material: PVC
+
+                            Height: 17.78cm
+                            
+                            Package: Color box
+                            </p>
+                        </div>
+                    </div>            
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                </div>
+                    <!-- Modal box -->
+            <div id="productModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img id="modalImg" class="product-img" />
+                  <h2 id="modalTitle" class="product-title"></h2>
+                  <span id="modalPrice" class="price"></span>
+                  <div id="modalDescription" class="product-description hidden"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        function filterProducts(category) {
+            var products = document.querySelectorAll('.product-box');
+            products.forEach(function(product) {
+                if (category === 'all') {
+                    product.style.display = 'inline-block';
+                } else if (category === 'top-sales') {
+                    var isTopSeller = product.getAttribute('data-topSeller') === 'true';
+                    if (isTopSeller) {
+                        product.style.display = 'inline-block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                } else if (product.getAttribute('data-category') === category) {
+                    product.style.display = 'inline-block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var usernameSpan = document.getElementById('username');
+        var username = sessionStorage.getItem('username');
+        if (username) {
+            usernameSpan.textContent = username;
+        }
+        var searchInput = document.getElementById('search');
+            searchInput.addEventListener('input', function() {
+                var searchTerm = this.value.trim().toLowerCase();
+                var products = document.querySelectorAll('.product-box');
+                products.forEach(function(product) {
+                    var title = product.querySelector('.product-title').textContent.toLowerCase();
+                    if (title.includes(searchTerm)) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+    });
+    </script>
+</html>
